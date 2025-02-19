@@ -1,0 +1,22 @@
+.error {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  margin-bottom: 130px;
+}
+.error h1 {
+  font-size: 350px;
+  font-weight: 700;
+  color: var(--primary);
+}
+.error p {
+  position: absolute;
+  font-size: 24px;
+  font-weight: 400;
+  letter-spacing: 3px;
+  top: 445px;
+}
+.error p a {
+  color: var(--primary);
+}/*# sourceMappingURL=error.css.map */

@@ -1,0 +1,25 @@
+.error {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    margin-bottom: 130px;
+
+    h1 {
+        font-size: 350px;
+        font-weight: 700;
+        color: var(--primary);
+    }
+
+    p {
+        position: absolute;
+        font-size: 24px;
+        font-weight: 400;
+        letter-spacing: 3px;
+        top: 445px;
+
+        a {
+            color: var(--primary);
+        }
+    }
+}

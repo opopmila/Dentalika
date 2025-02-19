@@ -1,0 +1,394 @@
+.banner {
+    background-color: var(--lightgray);
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 130px;
+
+    .banner-info {
+        display: flex;
+        flex-direction: column;
+        gap: 70px;
+        padding: 90px 0 68px;
+
+        .banner-info__top {
+            display: flex;
+            flex-direction: column;
+            gap: 50px;
+
+            .banner-txt__wrapper {
+                display: flex;
+                flex-direction: column;
+                gap: 50px;
+
+                span {
+                    color: var(--primary);
+                }
+
+                .desc {
+                    color: var(--dark);
+                    max-width: 900px;
+                }
+            }
+
+            .btn {
+                max-width: 472px;
+            }
+        }
+
+        .banner-info__bot {
+            padding: 25px 60px;
+            background-color: var(--white);
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            gap: 30px;
+
+            .banner-card {
+                display: flex;
+                gap: 15px;
+                align-items: center;
+
+                .banner-card__img {
+                    width: 80px;
+                    height: 80px;
+                    object-fit: contain;
+                }
+
+                .banner-card__text-wrapper {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 5px;
+
+                    .banner-card__name {
+                        color: var(--primary);
+                    }
+
+                    .banner-card__text {
+                        color: var(--stroke);
+                    }
+                }
+            }
+        }
+
+        .banner-photo {
+            position: absolute;
+            max-width: 493px;
+            width: 100%;
+            max-height: 700px;
+            height: 100%;
+            top: 7%;
+            right: 3%;
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+            }
+        }
+    }
+}
+
+.services {
+    margin-bottom: 130px;
+
+    .services-info {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 45px;
+
+
+        .services-cards {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            z-index: 2;
+            width: 100%;
+            height: 332px;
+            background-color: var(--lightgray);
+            border-radius: 10px;
+            position: relative;
+            overflow: hidden;
+            padding: 40px;
+
+            .services-cards__txt {
+                color: var(--dark);
+            }
+
+            .services-photo {
+                position: absolute;
+                left: 0;
+                bottom: 0;
+
+                &.accent {
+                    left: unset;
+                    right: 10%;
+                    top: 0;
+                }
+            }
+
+            .btn {
+                z-index: 2;
+                margin-left: auto;
+            }
+
+            &:hover {
+                .btn {
+                    background: var(--primary);
+
+                    svg {
+                        transform: rotate(85deg);
+
+                        path {
+                            fill: var(--white);
+                        }
+                    }
+                }
+            }
+
+            &:nth-child(2) {
+                grid-column: span 2;
+
+                .services-photo {
+                    max-width: 584px;
+                    width: 100%;
+                    max-height: 488px;
+                    height: 100%;
+                    top: 11%;
+
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                    }
+                }
+            }
+
+            &.accent {
+                background-color: var(--primary);
+
+                .p1 {
+                    color: var(--white);
+                }
+
+                svg {
+                    fill: var(--white);
+                }
+
+                &:hover {
+                    .btn {
+                        background-color: var(--white);
+
+                        svg path {
+                            fill: var(--primary);
+                        }
+                    }
+                }
+            }
+
+            &.pale {
+                background-color: var(--darkblue);
+
+                .services-cards__txt {
+                    color: var(--white);
+                }
+
+                .btn {
+                    background-color: transparent;
+                }
+
+                &:hover {
+                    .arrow-accent {
+                        background: var(--white);
+
+                        svg path {
+                            fill: var(--primary);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.about {
+    margin-bottom: 130px;
+
+    .about-info {
+        display: flex;
+        gap: 42px;
+        width: 100%;
+
+        .about-info-img {
+            max-width: 467px;
+            width: 100%;
+            background-color: var(--lightgray);
+            border-radius: 10px;
+
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+
+        .about-info-main {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            max-width: 1031px;
+            width: 100%;
+            gap: 10px;
+
+            .about-main__txt {
+                display: flex;
+                flex-direction: column;
+                gap: 15px;
+                padding: 50px;
+                width: 100%;
+                background-color: var(--lightgray);
+                border-radius: 10px;
+            }
+
+            .about-main__title {
+                color: var(--primary);
+            }
+
+            .about-main__imges {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                width: 100%;
+
+                img {
+                    border-radius: 10px;
+                    max-width: 317px;
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+        }
+    }
+}
+
+.overplay {
+    position: relative;
+    width: 100%;
+    height: 353px;
+    max-height: 100%;
+    background-image: url(../img/concept-interior-new-modern-dental-clinic-office-dental-equipment\ 1.png);
+    border-radius: 10px;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 183px 0 130px 0;
+
+    .overplay-info {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(4, 75, 168, 0.4);
+        border-radius: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .overplay-cards {
+            position: absolute;
+            top: -183px;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            gap: 45px;
+
+            .overplay-card {
+                max-width: 348px;
+                width: 100%;
+                max-height: 260px;
+                height: 100%;
+                color: white;
+                padding: 40px;
+                background-color: var(--primary);
+                border-radius: 10px;
+                display: flex;
+                flex-direction: column;
+                gap: 12px;
+            }
+        }
+    }
+}
+
+.specialist {
+    margin-bottom: 130px;
+
+    .specialist-info {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 10px;
+
+        .specialist-card {
+            padding: 25px;
+            max-width: 365px;
+            width: 100%;
+            height: 520px;
+            border-radius: 10px;
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+
+            .specialist-card__txt {
+                max-width: 315px;
+                width: 100%;
+                height: 125px;
+                padding: 20px;
+                background-color: var(--darkblue);
+                border-radius: 10px;
+                color: var(--white);
+                transition: all 0.3s ease-in;
+
+                .p2 {
+                    font-size: 20px;
+                    max-width: 200px;
+                }
+
+                .p1 {
+                    font-size: 16px;
+                }
+            }
+            
+            &:hover {
+                .specialist-card__txt {
+                    background-color: var(--white);
+                    color: var(--darkblue);
+                }
+            }
+        }
+
+        .i1 {
+            background-image: url(../img/close-up-health-worker\ 1.png);
+        }
+
+        .i2 {
+            background-image: url(../img/image\ 26.png);
+        }
+
+        .i3 {
+            background-image: url(../img/image\ 27.png);
+        }
+
+        .i4 {
+            background-image: url(../img/image\ 25.png);
+        }
+    }
+}
+
+.slaiders {
+    margin-bottom: 130px;
+}

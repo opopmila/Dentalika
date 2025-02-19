@@ -1,0 +1,207 @@
+.bread-crumbs {
+    padding: 30px 0 40px;
+
+    .p2 {
+        color: var(--stroke);
+        font-weight: 400;
+    }
+}
+
+.main {
+    margin-bottom: 130px;
+
+    .main-info {
+        display: flex;
+        gap: 30px;
+
+        .main-info_txt {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            padding: 50px;
+            max-width: 892px;
+            width: 100%;
+            height: 417px;
+            background-color: var(--lightgray);
+            border-radius: 10px;
+
+            .p1 {
+                font-size: 24px;
+            }
+        }
+
+        .main-info__img {
+            width: 100%;
+            max-width: 618px;
+            max-height: 417px;
+
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+}
+
+.advantages {
+    margin-bottom: 130px;
+
+    .advantages-info {
+        width: 100%;
+        height: 260px;
+        display: flex;
+        justify-content: center;
+        gap: 45px;
+
+        .advantage-card {
+            max-width: 348px;
+            width: 100%;
+            height: 100%;
+            color: white;
+            padding: 40px;
+            background-color: var(--primary);
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+    }
+}
+
+.slaiders {
+    max-width: 1540px;
+    margin: auto;
+    margin-bottom: 130px;
+
+    .slider-container {
+        position: relative;
+        overflow: hidden;
+
+        .slider-track {
+            display: flex;
+            transition: transform 0.3s ease;
+            gap: 24px;
+            border-radius: 10px;
+        }
+    }
+
+    .certificate-img {
+        width: 491px;
+        height: 328px;
+        object-fit: cover;
+        border-radius: 10px;
+        cursor: pointer;
+        transition: transform 0.3s ease;
+
+        &:hover {
+            transform: scale(1.05);
+        }
+    }
+
+    .controls {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 40px;
+        max-width: 1520px;
+
+        .buttons {
+            display: flex;
+            gap: 16px;
+
+            .btn {
+                width: 53px;
+                height: 53px;
+                padding: 0;
+                border: 1px solid var(--primary);
+                background: none;
+                border-radius: 50%;
+                cursor: pointer;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                transition: all 0.3s ease;
+
+                svg {
+                    transition: transform 0.3s ease;
+                }
+
+                .arrow-path {
+                    fill: var(--primary);
+                    transition: fill 0.3s ease;
+                }
+
+                &.active {
+                    background: var(--primary);
+
+                    .arrow-path {
+                        fill: white;
+                    }
+                }
+
+                &:hover:not(.active) {
+                    background: var(--primary);
+
+                    .arrow-path {
+                        fill: white;
+                    }
+                }
+            }
+        }
+
+        .dots {
+            display: flex;
+            gap: 12px;
+
+            .dot {
+                width: 8px;
+                height: 8px;
+                border-radius: 50%;
+                background: #D9D9D9;
+                transition: background-color 0.3s ease;
+
+                &.active {
+                    background: var(--primary);
+                }
+            }
+        }
+    }
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 10;
+    padding-top: 150px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.9);
+
+    .modal-content {
+        margin: auto;
+        display: block;
+        border-radius: 10px;
+        width: 80%;
+        max-width: 900px;
+    }
+
+    .close {
+        position: absolute;
+        top: 60px;
+        right: 35px;
+        color: #f1f1f1;
+        font-size: 40px;
+        font-weight: bold;
+        transition: 0.3s;
+
+        &:hover,
+        &:focus {
+            color: #bbb;
+            text-decoration: none;
+            cursor: pointer;
+        }
+    }
+}

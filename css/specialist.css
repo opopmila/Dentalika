@@ -1,0 +1,76 @@
+.bread-crumbs {
+  padding: 30px 0 40px;
+}
+.bread-crumbs .p2 {
+  color: var(--stroke);
+  font-weight: 400;
+}
+
+.specialist {
+  margin-bottom: 90px;
+}
+.specialist .specialist-info {
+  display: grid;
+  grid-template-columns: repeat(4, 2fr);
+  grid-gap: 10px;
+}
+.specialist .specialist-info .specialist-card {
+  padding: 25px;
+  max-width: 365px;
+  width: 100%;
+  height: 520px;
+  border-radius: 10px;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  transition: all 0.3s ease-in;
+  cursor: pointer;
+  margin-bottom: 40px;
+}
+.specialist .specialist-info .specialist-card .specialist-card__txt {
+  max-width: 315px;
+  width: 100%;
+  height: 125px;
+  padding: 20px;
+  background-color: var(--darkblue);
+  border-radius: 10px;
+  color: var(--white);
+  transition: all 0.3s ease-in;
+}
+.specialist .specialist-info .specialist-card .specialist-card__txt .p2 {
+  font-size: 20px;
+  max-width: 200px;
+}
+.specialist .specialist-info .specialist-card .specialist-card__txt .p1 {
+  font-size: 16px;
+}
+.specialist .specialist-info .specialist-card:hover .specialist-card__txt {
+  background-color: var(--white);
+  color: var(--darkblue);
+}
+.specialist .specialist-info .i1 {
+  background-image: url(../img/close-up-health-worker\ 1.png);
+}
+.specialist .specialist-info .i2 {
+  background-image: url(../img/image\ 26.png);
+}
+.specialist .specialist-info .i3 {
+  background-image: url(../img/image\ 27.png);
+}
+.specialist .specialist-info .i4 {
+  background-image: url(../img/image\ 25.png);
+}
+.specialist .specialist-info .i5 {
+  background-image: url(../img/preparing-utensils-microneedling-procedure\ 1.png);
+}
+.specialist .specialist-info .i6 {
+  background-image: url(../img/profession-dental-hygiene-professional-beautiful\ 1.png);
+}
+.specialist .specialist-info .i7 {
+  background-image: url(../img/portrait-smiling-caucasian-man-dentist-posing-modern-dental-office\ 1.png);
+}
+.specialist .specialist-info .i8 {
+  background-image: url(../img/beautician-woman-clinic\ 1.png);
+}/*# sourceMappingURL=specialist.css.map */

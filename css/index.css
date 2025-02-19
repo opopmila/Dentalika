@@ -1,0 +1,331 @@
+.banner {
+  background-color: var(--lightgray);
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 130px;
+}
+.banner .banner-info {
+  display: flex;
+  flex-direction: column;
+  gap: 70px;
+  padding: 90px 0 68px;
+}
+.banner .banner-info .banner-info__top {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+.banner .banner-info .banner-info__top .banner-txt__wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+.banner .banner-info .banner-info__top .banner-txt__wrapper span {
+  color: var(--primary);
+}
+.banner .banner-info .banner-info__top .banner-txt__wrapper .desc {
+  color: var(--dark);
+  max-width: 900px;
+}
+.banner .banner-info .banner-info__top .btn {
+  max-width: 472px;
+}
+.banner .banner-info .banner-info__bot {
+  padding: 25px 60px;
+  background-color: var(--white);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+.banner .banner-info .banner-info__bot .banner-card {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+.banner .banner-info .banner-info__bot .banner-card .banner-card__img {
+  width: 80px;
+  height: 80px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.banner .banner-info .banner-info__bot .banner-card .banner-card__text-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.banner .banner-info .banner-info__bot .banner-card .banner-card__text-wrapper .banner-card__name {
+  color: var(--primary);
+}
+.banner .banner-info .banner-info__bot .banner-card .banner-card__text-wrapper .banner-card__text {
+  color: var(--stroke);
+}
+.banner .banner-info .banner-photo {
+  position: absolute;
+  max-width: 493px;
+  width: 100%;
+  max-height: 700px;
+  height: 100%;
+  top: 7%;
+  right: 3%;
+}
+.banner .banner-info .banner-photo img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.services {
+  margin-bottom: 130px;
+}
+.services .services-info {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 45px;
+}
+.services .services-info .services-cards {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  z-index: 2;
+  width: 100%;
+  height: 332px;
+  background-color: var(--lightgray);
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+  padding: 40px;
+}
+.services .services-info .services-cards .services-cards__txt {
+  color: var(--dark);
+}
+.services .services-info .services-cards .services-photo {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+.services .services-info .services-cards .services-photo.accent {
+  left: unset;
+  right: 10%;
+  top: 0;
+}
+.services .services-info .services-cards .btn {
+  z-index: 2;
+  margin-left: auto;
+}
+.services .services-info .services-cards:hover .btn {
+  background: var(--primary);
+}
+.services .services-info .services-cards:hover .btn svg {
+  transform: rotate(85deg);
+}
+.services .services-info .services-cards:hover .btn svg path {
+  fill: var(--white);
+}
+.services .services-info .services-cards:nth-child(2) {
+  grid-column: span 2;
+}
+.services .services-info .services-cards:nth-child(2) .services-photo {
+  max-width: 584px;
+  width: 100%;
+  max-height: 488px;
+  height: 100%;
+  top: 11%;
+}
+.services .services-info .services-cards:nth-child(2) .services-photo img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.services .services-info .services-cards.accent {
+  background-color: var(--primary);
+}
+.services .services-info .services-cards.accent .p1 {
+  color: var(--white);
+}
+.services .services-info .services-cards.accent svg {
+  fill: var(--white);
+}
+.services .services-info .services-cards.accent:hover .btn {
+  background-color: var(--white);
+}
+.services .services-info .services-cards.accent:hover .btn svg path {
+  fill: var(--primary);
+}
+.services .services-info .services-cards.pale {
+  background-color: var(--darkblue);
+}
+.services .services-info .services-cards.pale .services-cards__txt {
+  color: var(--white);
+}
+.services .services-info .services-cards.pale .btn {
+  background-color: transparent;
+}
+.services .services-info .services-cards.pale:hover .arrow-accent {
+  background: var(--white);
+}
+.services .services-info .services-cards.pale:hover .arrow-accent svg path {
+  fill: var(--primary);
+}
+
+.about {
+  margin-bottom: 130px;
+}
+.about .about-info {
+  display: flex;
+  gap: 42px;
+  width: 100%;
+}
+.about .about-info .about-info-img {
+  max-width: 467px;
+  width: 100%;
+  background-color: var(--lightgray);
+  border-radius: 10px;
+}
+.about .about-info .about-info-img img {
+  width: 100%;
+  height: 100%;
+}
+.about .about-info .about-info-main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  max-width: 1031px;
+  width: 100%;
+  gap: 10px;
+}
+.about .about-info .about-info-main .about-main__txt {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 50px;
+  width: 100%;
+  background-color: var(--lightgray);
+  border-radius: 10px;
+}
+.about .about-info .about-info-main .about-main__title {
+  color: var(--primary);
+}
+.about .about-info .about-info-main .about-main__imges {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+.about .about-info .about-info-main .about-main__imges img {
+  border-radius: 10px;
+  max-width: 317px;
+  width: 100%;
+  height: 100%;
+}
+
+.overplay {
+  position: relative;
+  width: 100%;
+  height: 353px;
+  max-height: 100%;
+  background-image: url(../img/concept-interior-new-modern-dental-clinic-office-dental-equipment\ 1.png);
+  border-radius: 10px;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 183px 0 130px 0;
+}
+.overplay .overplay-info {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(4, 75, 168, 0.4);
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.overplay .overplay-info .overplay-cards {
+  position: absolute;
+  top: -183px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 45px;
+}
+.overplay .overplay-info .overplay-cards .overplay-card {
+  max-width: 348px;
+  width: 100%;
+  max-height: 260px;
+  height: 100%;
+  color: white;
+  padding: 40px;
+  background-color: var(--primary);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.specialist {
+  margin-bottom: 130px;
+}
+.specialist .specialist-info {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px;
+}
+.specialist .specialist-info .specialist-card {
+  padding: 25px;
+  max-width: 365px;
+  width: 100%;
+  height: 520px;
+  border-radius: 10px;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+.specialist .specialist-info .specialist-card .specialist-card__txt {
+  max-width: 315px;
+  width: 100%;
+  height: 125px;
+  padding: 20px;
+  background-color: var(--darkblue);
+  border-radius: 10px;
+  color: var(--white);
+  transition: all 0.3s ease-in;
+}
+.specialist .specialist-info .specialist-card .specialist-card__txt .p2 {
+  font-size: 20px;
+  max-width: 200px;
+}
+.specialist .specialist-info .specialist-card .specialist-card__txt .p1 {
+  font-size: 16px;
+}
+.specialist .specialist-info .specialist-card:hover .specialist-card__txt {
+  background-color: var(--white);
+  color: var(--darkblue);
+}
+.specialist .specialist-info .i1 {
+  background-image: url(../img/close-up-health-worker\ 1.png);
+}
+.specialist .specialist-info .i2 {
+  background-image: url(../img/image\ 26.png);
+}
+.specialist .specialist-info .i3 {
+  background-image: url(../img/image\ 27.png);
+}
+.specialist .specialist-info .i4 {
+  background-image: url(../img/image\ 25.png);
+}
+
+.slaiders {
+  margin-bottom: 130px;
+}/*# sourceMappingURL=index.css.map */

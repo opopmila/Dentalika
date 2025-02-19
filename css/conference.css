@@ -1,0 +1,11 @@
+.bread-crumbs {
+  padding: 30px 0 40px;
+}
+.bread-crumbs .p2 {
+  color: var(--stroke);
+  font-weight: 400;
+}
+
+.conference {
+  margin-bottom: 130px;
+}/*# sourceMappingURL=conference.css.map */

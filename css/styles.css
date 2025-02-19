@@ -1,0 +1,569 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Manrope", serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  max-width: 1920px;
+  overflow-x: hidden;
+  margin: 0 auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  color: var(--dark);
+}
+
+:root {
+  --dark: #292F2F;
+  --gray: #9C9C9C;
+  --stroke: #D9D9D9;
+  --white: #FFFFFF;
+  --lightgray: #F6F6F6;
+  --primary: #044BA8;
+  --darkblue: #304259;
+}
+
+input,
+button,
+select {
+  outline: none;
+}
+
+.block {
+  scroll-margin-top: 15em;
+}
+
+h1 {
+  font-size: 58px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-size: 32px;
+  font-weight: 600;
+  text-transform: uppercase;
+  padding-bottom: 70px;
+}
+
+.p1 {
+  font-size: 20px;
+  font-weight: 300;
+}
+
+.p2 {
+  font-size: 24px;
+  font-weight: 500;
+}
+
+a {
+  text-decoration: none;
+  color: unset;
+  transition: all 0.3s ease-in;
+}
+
+.page-item {
+  color: var(--primary);
+  font-weight: 600 !important;
+}
+
+button {
+  background: unset;
+  border: none;
+  outline: none;
+}
+
+.btn {
+  padding: 10px 10px 10px 40px;
+  background-color: var(--primary);
+  border-radius: 100px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  color: var(--white);
+  font-size: 24px;
+  font-weight: 400;
+  border: 1px solid var(--primary);
+  transition: all 0.3s ease-in;
+  cursor: pointer;
+}
+
+.btn .btn-img {
+  width: 86px;
+  height: 86px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--white);
+  border-radius: 100%;
+  transition: all 0.3s ease-in;
+}
+
+.btn .btn-img svg {
+  width: 45px;
+  height: 45px;
+  -o-object-fit: contain;
+  object-fit: contain;
+  transition: all 0.3s ease-in;
+}
+
+.btn:hover {
+  background-color: var(--white);
+  border: 1px solid var(--primary);
+  color: var(--primary);
+}
+
+.btn:hover .btn-img {
+  background-color: var(--primary);
+}
+
+.btn:hover svg path {
+  fill: var(--white);
+}
+
+.btn.arrow {
+  width: 60px;
+  height: 60px;
+  background: var(--white);
+  border: 2px solid var(--primary);
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.btn.arrow:hover {
+  background: var(--primary);
+}
+
+.btn.arrow:hover svg {
+  transform: rotate(65deg);
+}
+
+.btn.arrow svg {
+  transition: all 0.3s ease-in;
+  width: 20px;
+  height: 20px;
+}
+
+.btn.arrow-accent {
+  width: 60px;
+  height: 60px;
+  background: var(--primary);
+  border: 2px solid var(--white);
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.btn.arrow-accent:hover {
+  background: var(--white);
+}
+
+.btn.arrow-accent:hover svg {
+  transform: rotate(65deg);
+}
+
+.btn.arrow-accent:hover svg path {
+  fill: var(--white);
+}
+
+.btn.arrow-accent svg {
+  transition: all 0.3s ease-in;
+  width: 20px;
+  height: 20px;
+}
+
+.btn.arrow-accent svg path {
+  fill: var(--white);
+}
+
+.container {
+  max-width: 1720px;
+  margin: 0 auto;
+  padding: 0 90px;
+}
+
+.container.big {
+  max-width: 1920px;
+  width: 100%;
+  margin: 0 auto;
+  padding-left: clamp(2.5rem, -3.75rem + 8.33vw, 6.25rem);
+  padding-right: clamp(2.5rem, -3.75rem + 8.33vw, 6.25rem);
+}
+
+header {
+  background-color: var(--lightgray);
+  border-radius: 10px;
+  margin: 30px 0px;
+}
+
+header .header-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 40px 0px;
+}
+
+header .header-info .logo-link {
+  display: flex;
+  align-items: center;
+  max-width: 196px;
+  gap: 5px;
+}
+
+header .header-info .logo-link .logo-img {
+  width: 53px;
+  height: 56px;
+  -o-object-fit: contain;
+  object-fit: contain;
+}
+
+header .header-info .logo-link .logo-txt {
+  font-size: 32px;
+  font-weight: 400;
+}
+
+header .header-info .header-info__right {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+
+header .header-info .header-info__right .header-nav {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+
+header .header-info .header-info__right .header-nav li {
+  list-style: none;
+}
+
+header .header-info .header-info__right .header-nav li a {
+  font-size: 24px;
+  font-weight: 400;
+}
+
+header .header-info .header-info__right .header-nav li a:hover {
+  color: var(--primary);
+}
+
+header .header-info .header-info__right .header-phone {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.forms {
+  background-image: url(../img/female-dentist-special-red-glasses-treating-her-patient-s-teeth-with-dental-instruments\ 1.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 50px 0;
+  width: 100%;
+  height: 516px;
+  position: relative;
+  margin-bottom: 130px;
+}
+
+.forms::before {
+  position: absolute;
+  content: "";
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(4, 75, 168, 0.4);
+}
+
+.forms .form-info {
+  position: relative;
+}
+
+.forms .form-info h2 {
+  color: var(--white);
+}
+
+.forms .form-info .form-main {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 799px;
+  width: 100%;
+}
+
+.forms .form-info .form-main input {
+  padding: 19px 50px;
+  font-size: 24px;
+  font-weight: 400;
+  color: var(--gray);
+  border: 1px var(--stroke) solid;
+  border-radius: 10px;
+}
+
+.forms .form-info .form-main .p1 {
+  color: var(--white);
+}
+
+.forms .form-info .form-main .btn {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 4px 4px 4px 40px;
+  max-width: 388px;
+  width: 100%;
+  background-color: var(--white);
+  border: 1px solid var(--primary);
+  border-radius: 100px;
+  color: var(--primary);
+  font-size: 24px;
+  font-weight: 400;
+  transition: all 0.3s ease-in;
+  cursor: pointer;
+}
+
+.forms .form-info .form-main .btn .btn-img {
+  width: 75px;
+  height: 75px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--primary);
+  border-radius: 100%;
+  transition: all 0.3s ease-in;
+}
+
+.forms .form-info .form-main .btn .btn-img svg path {
+  fill: var(--white);
+  width: 38px;
+  height: 38px;
+  -o-object-fit: contain;
+  object-fit: contain;
+  transition: all 0.3s ease-in;
+}
+
+.forms .form-info .form-main .btn:hover {
+  background-color: var(--primary);
+  border: 1px solid var(--primary);
+  color: var(--white);
+}
+
+.forms .form-info .form-main .btn:hover .btn-img {
+  background-color: var(--white);
+}
+
+.forms .form-info .form-main .btn:hover svg path {
+  fill: var(--primary);
+}
+
+footer {
+  background-color: var(--darkblue);
+  border-radius: 10px;
+  margin-bottom: 30px;
+}
+
+footer .footer-info {
+  padding: 40px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 94px;
+}
+
+footer .footer-info .footer-info__top {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+footer .footer-info .footer-info__top .footer-top__logo {
+  display: flex;
+  align-items: center;
+  max-width: 196px;
+  gap: 5px;
+}
+
+footer .footer-info .footer-info__top .footer-top__logo .logo-img {
+  width: 53px;
+  height: 56px;
+  -o-object-fit: contain;
+  object-fit: contain;
+}
+
+footer .footer-info .footer-info__top .footer-top__logo .logo-txt {
+  font-size: 32px;
+  font-weight: 400;
+  color: var(--white);
+}
+
+footer .footer-info .footer-info__top .p2 {
+  color: var(--white);
+}
+
+footer .footer-info .footer-info__top .p1 {
+  color: var(--stroke);
+  transition: all 0.3s ease-in;
+}
+
+footer .footer-info .footer-info__top .p1:hover {
+  color: var(--white);
+}
+
+footer .footer-info .footer-info__top .footer-top__company,
+footer .footer-info .footer-info__top .footer-top__services,
+footer .footer-info .footer-info__top .footer-top__contact {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+footer .footer-info .footer-info__bottom {
+  padding: 47px 0 24px 0;
+  border-top: 1px solid var(--white);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+footer .footer-info .footer-info__bottom .p1 {
+  color: var(--stroke);
+  transition: all 0.3s ease-in;
+}
+
+footer .footer-info .footer-info__bottom .p1:hover {
+  color: var(--white);
+}
+
+.slaiders .slider-container {
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 1.5rem;
+}
+
+.slaiders .slider-container .slider-track {
+  display: flex;
+  transition: transform 0.3s ease;
+  gap: 10px;
+}
+
+.slaiders .testimonial-card {
+  padding: 40px;
+  background-color: var(--lightgray);
+  border-radius: 10px;
+  width: 491px;
+  height: 328px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  flex-shrink: 0;
+}
+
+.slaiders .testimonial-card .comment-card__name .service {
+  color: var(--primary);
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.slaiders .testimonial-card .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.slaiders .testimonial-card .header .name {
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.slaiders .testimonial-card .header .date {
+  color: var(--gray);
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.slaiders .testimonial-card .comment-card__txt .text {
+  font-size: 20px;
+  font-weight: 300;
+}
+
+.slaiders .controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 40px;
+}
+
+.slaiders .controls .buttons {
+  display: flex;
+  gap: 16px;
+}
+
+.slaiders .controls .buttons .btn {
+  width: 53px;
+  height: 53px;
+  padding: 0;
+  border: 1px solid var(--primary);
+  background: none;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+
+.slaiders .controls .buttons .btn svg {
+  transition: transform 0.3s ease;
+}
+
+.slaiders .controls .buttons .btn .arrow-path {
+  fill: var(--primary);
+  transition: fill 0.3s ease;
+}
+
+.slaiders .controls .buttons .btn.active {
+  background: var(--primary);
+}
+
+.slaiders .controls .buttons .btn.active .arrow-path {
+  fill: white;
+}
+
+.slaiders .controls .buttons .btn:hover:not(.active) {
+  background: var(--primary);
+}
+
+.slaiders .controls .buttons .btn:hover:not(.active) .arrow-path {
+  fill: white;
+}
+
+.slaiders .controls .dots {
+  display: flex;
+  gap: 12px;
+}
+
+.slaiders .controls .dots .dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #D9D9D9;
+  transition: background-color 0.3s ease;
+}
+
+.slaiders .controls .dots .dot.active {
+  background: var(--primary);
+}
+
+/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,109 @@
+.bread-crumbs {
+  padding: 30px 0 40px;
+}
+.bread-crumbs .p2 {
+  color: var(--stroke);
+  font-weight: 400;
+}
+
+.services {
+  margin-bottom: 90px;
+}
+.services .services-info {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 40px;
+  gap: 5px;
+}
+.services .services-info .services-img {
+  max-width: 480px;
+  width: 100%;
+}
+.services .services-info .services-img img {
+  border-radius: 10px;
+  width: 100%;
+}
+.services .services-info .services-txt {
+  position: relative;
+  padding: 40px;
+  max-width: 1020px;
+  width: 100%;
+  height: 480px;
+  background-color: var(--lightgray);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+.services .services-info .services-txt ul {
+  padding-left: 20px;
+}
+.services .services-info .butn {
+  position: absolute;
+  top: 377.5px;
+  left: 787px;
+  max-width: 193px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 21px;
+  background-color: transparent;
+  color: var(--primary);
+  font-size: 20px;
+  font-weight: 500;
+  transition: all 0.3s ease-in;
+  cursor: pointer;
+}
+.services .services-info .butn .arrow {
+  width: 62px;
+  height: 62px;
+  background: transparent;
+  border: 2px solid var(--primary);
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+}
+.services .services-info .butn .arrow svg {
+  width: 20px;
+  height: 20px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  transition: all 0.3s ease-in;
+}
+.services .services-info:hover .arrow {
+  background-color: var(--primary);
+}
+.services .services-info:hover .arrow svg {
+  transform: rotate(85deg);
+}
+.services .services-info:hover .arrow svg path {
+  fill: var(--white);
+}
+.services .services-info.row {
+  flex-direction: row-reverse;
+}
+.services .services-info.row .services-txt {
+  background-color: var(--primary);
+  color: var(--white);
+}
+.services .services-info.row .butn {
+  color: var(--white);
+}
+.services .services-info.row .butn .arrow {
+  border: 2px solid var(--white);
+}
+.services .services-info.row .butn .arrow svg path {
+  fill: var(--white);
+}
+.services .services-info.row:hover .arrow {
+  background-color: var(--white);
+}
+.services .services-info.row:hover .arrow svg {
+  transform: rotate(85deg);
+}
+.services .services-info.row:hover .arrow svg path {
+  fill: var(--primary);
+}/*# sourceMappingURL=services.css.map */

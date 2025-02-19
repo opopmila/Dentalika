@@ -1,0 +1,166 @@
+.bread-crumbs {
+  padding: 30px 0 40px;
+}
+.bread-crumbs .p2 {
+  color: var(--stroke);
+  font-weight: 400;
+}
+
+.specialist {
+  margin-bottom: 130px;
+}
+.specialist .specialist-info {
+  display: flex;
+  justify-content: space-between;
+  gap: 5px;
+}
+.specialist .specialist-info .specialist-img {
+  max-height: 584px;
+  max-width: 480px;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  border-radius: 10px;
+}
+.specialist .specialist-info .specialist-img img {
+  width: 100%;
+  height: 100%;
+}
+.specialist .specialist-info .specialist-txt {
+  position: relative;
+  padding: 40px;
+  max-width: 1020px;
+  width: 100%;
+  height: 584px;
+  background-color: var(--lightgray);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.specialist .specialist-info .specialist-txt ul {
+  padding-left: 20px;
+}
+.specialist .specialist-info.row .servic-txt {
+  background-color: var(--primary);
+  color: var(--white);
+}
+
+.slaiders {
+  max-width: 1530px;
+  margin: auto;
+  margin-bottom: 130px;
+}
+.slaiders .slider-container {
+  position: relative;
+  overflow: hidden;
+}
+.slaiders .slider-container .slider-track {
+  display: flex;
+  transition: transform 0.3s ease;
+  gap: 24px;
+  border-radius: 10px;
+}
+.slaiders .certificate-img {
+  width: 491px;
+  height: 328px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+.slaiders .certificate-img:hover {
+  transform: scale(1.05);
+}
+.slaiders .controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 40px;
+  max-width: 1520px;
+}
+.slaiders .controls .buttons {
+  display: flex;
+  gap: 16px;
+}
+.slaiders .controls .buttons .btn {
+  width: 53px;
+  height: 53px;
+  padding: 0;
+  border: 1px solid var(--primary);
+  background: none;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+.slaiders .controls .buttons .btn svg {
+  transition: transform 0.3s ease;
+}
+.slaiders .controls .buttons .btn .arrow-path {
+  fill: var(--primary);
+  transition: fill 0.3s ease;
+}
+.slaiders .controls .buttons .btn.active {
+  background: var(--primary);
+}
+.slaiders .controls .buttons .btn.active .arrow-path {
+  fill: white;
+}
+.slaiders .controls .buttons .btn:hover:not(.active) {
+  background: var(--primary);
+}
+.slaiders .controls .buttons .btn:hover:not(.active) .arrow-path {
+  fill: white;
+}
+.slaiders .controls .dots {
+  display: flex;
+  gap: 12px;
+}
+.slaiders .controls .dots .dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #D9D9D9;
+  transition: background-color 0.3s ease;
+}
+.slaiders .controls .dots .dot.active {
+  background: var(--primary);
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 10;
+  padding-top: 150px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.9);
+}
+.modal .modal-content {
+  margin: auto;
+  display: block;
+  border-radius: 10px;
+  width: 80%;
+  max-width: 900px;
+}
+.modal .close {
+  position: absolute;
+  top: 60px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+.modal .close:hover, .modal .close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}/*# sourceMappingURL=spec.css.map */
