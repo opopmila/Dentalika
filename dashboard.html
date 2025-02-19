@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <link rel="icon" href="./img/icons/logo.png">
+    <link rel="stylesheet" href="./css/admin.css">
+    <title>Dentalika - Панель администратора</title>
+</head>
+
+<body>
+    <div id="adminPanel" class="admin-panel">
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <img src="./img/icons/image 6.svg" alt="" class="logo">
+                <h2>Dentalika</h2>
+            </div>
+            <nav class="sidebar-nav">
+                <ul>
+                    <li><a href="#" data-page="home">Главная</a></li>
+                    <li><a href="#" data-page="services">Все услуги</a></li>
+                    <li><a href="#" data-page="doctors">Все врачи</a></li>
+                    <li><a href="#" data-page="reviews">Отзывы</a></li>
+                    <li><a href="#" data-page="contacts">Контакты</a></li>
+                    <li><a href="#" data-page="privacy">Политика конфиденциальности</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <main class="main-content">
+            <header class="admin-header">
+                <h1>Панель администратора</h1>
+                <button id="logoutBtn" class="logout-btn">Выйти</button>
+            </header>
+            <div id="contentArea" class="content-area">
+            </div>
+        </main>
+    </div>
+
+    <script src="./js/admin.js"></script>
+</body>
+
+</html>
